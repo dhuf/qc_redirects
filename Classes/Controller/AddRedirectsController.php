@@ -170,7 +170,7 @@ class AddRedirectsController extends ActionController
      * @param ServerRequestInterface|null $request
      * @throws Exception
      */
-    public function importAction(ServerRequestInterface $request = null): ResponseInterface
+    public function importAction(?ServerRequestInterface $request = null): ResponseInterface
     {
 
         $requestBody = [];
@@ -208,7 +208,7 @@ class AddRedirectsController extends ActionController
 
         return $moduleTemplate->renderResponse('Import');
     }
-    public function resetAction(ServerRequestInterface $request = null): ResponseInterface{
+    public function resetAction(?ServerRequestInterface $request = null): ResponseInterface{
         return (new ForwardResponse('import'));
     }
     /**

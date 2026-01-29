@@ -18,7 +18,7 @@ class DemandExt extends Demand
         string $target = '',
         array $statusCodes = [],
         int $maxHits = 0,
-        \DateTimeInterface $olderThan = null,
+        ?\DateTimeInterface $olderThan = null,
         ?int $creationType = -1,
         string $title = ''
     ) {
